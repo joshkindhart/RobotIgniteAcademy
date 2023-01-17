@@ -51,12 +51,10 @@ class Robot():
         if direction == 'left':
             self.velocity = 0.1
             self.move.angular.z = self.velocity
-            time.sleep(self.time)
             print('Turning {robot.choose_direction}! \n')
         elif direction == 'right':
             self.velocity = -0.1
             self.move.angular.z = self.velocity
-            time.sleep(self.time)
             print('Turning {robot.choose_direction}! \n')
 
 # -----------------------------------------------------------------------------------------

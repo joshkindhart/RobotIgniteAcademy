@@ -29,10 +29,10 @@ class Robot():
         print('Proceeding! \n')
 
     def is_advancing(self):
-        if not self.move.linear.x == 0.0:
-            return False
-        else:
+        if self.move.linear.x > 0.0:
             return True
+        else:
+            return False
 
     def stop(self):
         self.move.linear.x = 0.0
